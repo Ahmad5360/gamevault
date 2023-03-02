@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import LatestNews from "./Components/Latest_News";
+import LatestNews from "./Components/LatestNews";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 
