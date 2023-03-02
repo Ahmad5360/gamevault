@@ -43,14 +43,14 @@ export default function NavBar(props) {
                 Latest News
               </Link>
               <Link
-                to="#pricing"
+                to="about"
                 style={{ color: "#fff", fontSize: "17px" }}
                 className="link"
               >
                 About Us
               </Link>
               <Link
-                to="#pricing"
+                to="contact"
                 style={{ color: "#fff", fontSize: "17px" }}
                 className="link"
               >
