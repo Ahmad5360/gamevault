@@ -22,6 +22,8 @@ a {
 .link {
   color: #fff;
   text-decoration: none;
+  padding: 12px 20px 12px 4px;
+  
 }
 
 /* .link:hover {
@@ -31,5 +33,4 @@ a {
 .link:hover {
   text-shadow: 0 8px 10px #4af6ff, 0 0 20px #ffffff, 0 6px 30px #2f7f85, 0 0 40px #61b8befa, 0 0 50px #4ec8d3;
   
-
 }

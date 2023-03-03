@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar title={"SITE NAME"}
+        <Navbar title={"GameVault"}
           Link1={"HOME"}
           Link2={"BLOG"}
           Link3={"About US"}

@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 export default function NavBar(props) {
   return (
     <div>
@@ -23,7 +24,7 @@ export default function NavBar(props) {
             to="/"
             style={{ color: "#fff", fontSize: "32px" }}
           >
-            GameVault
+            {props.title}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -33,28 +34,28 @@ export default function NavBar(props) {
                 style={{ color: "#fff", fontSize: "17px" }}
                 className="link"
               >
-                Home
+                {props.Link1}
               </Link>
               <Link
                 to="latestnews"
                 style={{ color: "#fff", fontSize: "17px" }}
                 className="link"
               >
-                Latest News
+                {props.Link2}
               </Link>
               <Link
                 to="about"
                 style={{ color: "#fff", fontSize: "17px" }}
                 className="link"
               >
-                About Us
+                {props.Link3}
               </Link>
               <Link
                 to="contact"
                 style={{ color: "#fff", fontSize: "17px" }}
                 className="link"
               >
-                Contact
+                {props.Link4}
               </Link>
             </Nav>
           </Navbar.Collapse>
@@ -63,3 +64,23 @@ export default function NavBar(props) {
     </div>
   );
 }
+
+// Setting Prop Types
+
+NavBar.propTypes = {
+    title: PropTypes.string.isRequired,
+    Link1: PropTypes.string,
+    Link2: PropTypes.string,
+    Link3: PropTypes.string,
+    Link4: PropTypes.string,
+
+  };
+  
+  // Default Prop Value
+  NavBar.defaultProps = {
+    title: "SET SITE TITLE HERE",
+    Link1: "SET LINK1 HERE",
+    Link2: "SET LINK2 HERE",
+    Link3: "SET LINK3 HERE",
+    Link4: "SET LINK4 HERE",
+  };
