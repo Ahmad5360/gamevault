@@ -32,7 +32,7 @@ code {
 }
 
 /* Add styles for the game cards */
-.game-card {
+ .game-card {
     width: 300px;
     height: 450px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -45,7 +45,20 @@ code {
     color: white;
     padding-bottom: 20px;
     /* transition: all .2s ease-in-out; */
-}
+} 
+
+/* .game-card {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+  color: white;
+  padding-bottom: 20px;
+} */
 
 /* Add styles for the game card image */
 .game-card img {
@@ -53,6 +66,7 @@ code {
     height: 80%;
     object-fit: cover;
 }
+
 
 /* Add hover effect for the game cards */
 .game-card:hover {
@@ -63,7 +77,9 @@ code {
 
 .game-info {
     margin: 10px;
-}
+} 
+
+
 
 #gbtn {
 
@@ -398,6 +414,21 @@ input {
     transform: translateY(-72px);
 }
 
+/* Media query for screens smaller than 768px */
+/* @media screen and (max-width: 767px) {
+  .game-card {
+      width: 100%;
+      margin: 0;
+  }
+}
+
+/* Media query for screens larger than 768px */
+/* @media screen and (min-width: 768px) {
+  .game-card {
+      width: calc(50% - 60px);
+      margin: 20px 30px;
+  }
+} */
 
 @media (min-width: 768px) {
   .console-container {

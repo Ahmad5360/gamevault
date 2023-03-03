@@ -1,16 +1,13 @@
 import React, { useEffect } from "react";
-import menja from "../images/MENJA.png"
-import tic_tac_toe from "../images/Tic-Tac-Toe.png"
-import cube from "../images/cube.png"
-import snake from "../images/Tic-Tac-Toe.png"
-import color_blast from "../images/Color-Blast.png"
-import t_block from "../images/Tower-Blocks.png"
-import colorOn from "../images/COLORON-GAME.png"
-import infinite_runner from "../images/Infinite-Runner-game.png"
-import twozfe from "../images/2048-game.png"
-
-
-
+import menja from "../images/MENJA.png";
+import tic_tac_toe from "../images/Tic-Tac-Toe.png";
+import cube from "../images/cube.png";
+import snake from "../images/Tic-Tac-Toe.png";
+import color_blast from "../images/Color-Blast.png";
+import t_block from "../images/Tower-Blocks.png";
+import colorOn from "../images/COLORON-GAME.png";
+import infinite_runner from "../images/Infinite-Runner-game.png";
+import twozfe from "../images/2048-game.png";
 
 function Home() {
   useEffect(() => {
@@ -88,101 +85,158 @@ function Home() {
         </div>
       </div>
 
+      <div className="game-library text-center">
+        <div className="row">
+          <div className="col-md-4">
+            <div className="game-card action text-center">
+              <img src={menja} alt="Game 1" />
+              <div className="game-info">
+                <h3>MENJA</h3>
+                <button
+                  id="gbtn"
+                  onclick="window.location.href='./menja/main.html'"
+                  className="material-symbols-outlined"
+                >
+                  play_arrow
+                </button>
+              </div>
+            </div>
+          </div>
 
-      <div class="game-library text-center">
-            <div class="game-card action text-center">
-                <img src={menja} alt="Game 1"/>
-                <div class="game-info">
-                    <h3>MENJA</h3>
-                    <button id="gbtn" onclick="window.location.href='./menja/main.html'"
-                        class="material-symbols-outlined">
-                        play_arrow
-                    </button>
-                </div>
+          <div className="col-md-4">
+            <div className="game-card action text-center">
+              <img src={tic_tac_toe} alt="Game 2" />
+              <div className="game-info">
+                <h3>Tik-Tac-Toe</h3>
+                <button
+                  id="gbtn"
+                  onclick="window.location.href='./Tik-Tac-Toe/index.html'"
+                  className="material-symbols-outlined"
+                >
+                  play_arrow
+                </button>
+              </div>
             </div>
-            <div class="game-card action text-center">
-                <img src={tic_tac_toe} alt="Game 2"/>
-                <div class="game-info">
-                    <h3>Tik-Tac-Toe</h3>
-                    <button id="gbtn" onclick="window.location.href='./Tik-Tac-Toe/index.html'"
-                        class="material-symbols-outlined">
-                        play_arrow
-                    </button>
-                </div>
+          </div>
+
+          <div className="col-md-4">
+            <div className="game-card action text-center">
+              <img src={cube} alt="Game 1" />
+              <div className="game-info">
+                <h3>The Cube</h3>
+                <button
+                  id="gbtn"
+                  onclick="window.location.href='./the-cube/index.html'"
+                  className="material-symbols-outlined"
+                >
+                  play_arrow
+                </button>
+              </div>
             </div>
-            <div class="game-card action text-center">
-                <img src={cube} alt="Game 1"/>
-                <div class="game-info">
-                    <h3>The Cube</h3>
-                    <button id="gbtn" onclick="window.location.href='./the-cube/index.html'"
-                        class="material-symbols-outlined">
-                        play_arrow
-                    </button>
-                </div>
-            </div>
-            <div class="game-card action text-center">
-                <img src={snake} alt="Game 1"/>
-                <div class="game-info">
-                    <h3>SNAKE</h3>
-                    <button id="gbtn" onclick="window.location.href='./Snake Game/main.html'"
-                        class="material-symbols-outlined">
-                        play_arrow
-                    </button>
-                </div>
-            </div>
-            <div class="game-card action text-center">
-                <img src={color_blast} alt="Game 1"/>
-                <div class="game-info">
-                    <h3>Color Blast</h3>
-                    <button id="gbtn" onclick="window.location.href='./Color Blast/main.html'"
-                        class="material-symbols-outlined">
-                        play_arrow
-                    </button>
-                </div>
-            </div>
-            <div class="game-card action text-center">
-                <img src={t_block} alt="Game 1"/>
-                <div class="game-info">
-                    <h3>Tower Blocks</h3>
-                    <button id="gbtn" onclick="window.location.href='./Tower Blocks/index.html'"
-                        class="material-symbols-outlined">
-                        play_arrow
-                    </button>
-                </div>
-            </div>
-            <div class="game-card action text-center">
-                <img src={colorOn} alt="Game 1"/>
-                <div class="game-info">
-                    <h3>ColorOn</h3>
-                    <button id="gbtn" onclick="window.location.href='./Color-Game/index.html'"
-                        class="material-symbols-outlined">
-                        play_arrow
-                    </button>
-                </div>
-            </div>
-            <div class="game-card action text-center">
-                <img src={infinite_runner} alt="Game 1"/>
-                <div class="game-info">
-                    <h3>Infinite Runner</h3>
-                    <button id="gbtn" onclick="window.location.href='./Infinite-Runner/index.html'"
-                        class="material-symbols-outlined">
-                        play_arrow
-                    </button>
-                </div>
-            </div>
-            <div class="game-card action text-center">
-                <img src={twozfe} alt="Game 1"/>
-                <div class="game-info">
-                    <h3>2048</h3>
-                    <button id="gbtn" onclick="window.location.href='./2048/index.html'"
-                        class="material-symbols-outlined">
-                        play_arrow
-                    </button>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div className="row">
+          <div className="col-md-4">
+            <div className="game-card action text-center">
+              <img src={snake} alt="Game 1" />
+              <div className="game-info">
+                <h3>SNAKE</h3>
+                <button
+                  id="gbtn"
+                  onclick="window.location.href='./Snake Game/main.html'"
+                  className="material-symbols-outlined"
+                >
+                  play_arrow
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-4">
+            <div className="game-card action text-center">
+              <img src={color_blast} alt="Game 1" />
+              <div className="game-info">
+                <h3>Color Blast</h3>
+                <button
+                  id="gbtn"
+                  onclick="window.location.href='./Color Blast/main.html'"
+                  className="material-symbols-outlined"
+                >
+                  play_arrow
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-4">
+            <div className="game-card action text-center">
+              <img src={t_block} alt="Game 1" />
+              <div className="game-info">
+                <h3>Tower Blocks</h3>
+                <button
+                  id="gbtn"
+                  onclick="window.location.href='./Tower Blocks/index.html'"
+                  className="material-symbols-outlined"
+                >
+                  play_arrow
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-md-4">
+            <div className="game-card action text-center">
+              <img src={colorOn} alt="Game 1" />
+              <div className="game-info">
+                <h3>ColorOn</h3>
+                <button
+                  id="gbtn"
+                  onclick="window.location.href='./Color-Game/index.html'"
+                  className="material-symbols-outlined"
+                >
+                  play_arrow
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-4">
+            <div className="game-card action text-center">
+              <img src={infinite_runner} alt="Game 1" />
+              <div className="game-info">
+                <h3>Infinite Runner</h3>
+                <button
+                  id="gbtn"
+                  onclick="window.location.href='./Infinite-Runner/index.html'"
+                  className="material-symbols-outlined"
+                >
+                  play_arrow
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-4">
+            <div className="game-card action text-center">
+              <img src={twozfe} alt="Game 1" />
+              <div className="game-info">
+                <h3>2048</h3>
+                <button
+                  id="gbtn"
+                  onclick="window.location.href='./2048/index.html'"
+                  className="material-symbols-outlined"
+                >
+                  play_arrow
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
   );
 }
 
