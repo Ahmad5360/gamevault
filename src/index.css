@@ -17,7 +17,10 @@ code {
 }
 
 
-
+.col-md-4
+{
+  padding: 0;
+}
 /* Add styles for the game genre */
 .action,
 .adventure,
@@ -244,14 +247,7 @@ input {
     background: -webkit-linear-gradient(left, #b224ef, #1babb6ae);
 }
 
-.forgot-pass {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-}
+
 
 .forgot-pass:hover {
     color: #68f5ffae;
