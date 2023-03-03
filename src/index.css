@@ -425,6 +425,25 @@ input {
       margin: 20px 30px;
   }
 } */
+.post p {
+  text-align: justify;
+  color: #fff;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+.post h3 {
+  color: white;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media (max-width: 767px) {
+  .footer> div {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
 
 @media (min-width: 768px) {
   .console-container {

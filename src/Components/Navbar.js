@@ -18,6 +18,7 @@ export default function NavBar(props) {
           WebkitBackdropFilter: "blur(5px)",
           border: "1px solid rgba(255, 255, 255, 0.3)",
         }}
+        
       >
         <Container>
           <Navbar.Brand
