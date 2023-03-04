@@ -54,7 +54,7 @@ export default function Contact() {
                         <form onSubmit={handleSubmit}>
                           <div className="row">
                             <div className="col-md-12">
-                              <div className="">
+                              <div className="form-group">
                                 <input
                                   type="text"
                                   className="form-control"
@@ -115,7 +115,7 @@ export default function Contact() {
                                 <input
                                   type="submit"
                                   value="Send Message"
-                                  className="btn btn-primary"
+                                  className="btn"
                                 />
                                 <div className="submitting"></div>
                               </div>

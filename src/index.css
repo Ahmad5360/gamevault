@@ -439,12 +439,11 @@ label span {
   width: 100%;
   margin:10px 0;
   font-size: 16px;
-  padding-bottom: 5px;
+  
   /* border-bottom: 1px solid rgba(255, 255, 255); */
   /* text-align: center; */
   font-family: 'Nunito', sans-serif;
-  color: #fff;
-  padding: 5px 60% 5px 10px;
+  /* padding: 5px 60% 5px 10px; */
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -453,6 +452,10 @@ label span {
   color: #fff;
   border-radius: 0;
 
+}
+
+input:-internal-autofill-selected {
+  background-color: -internal-light-dark(rgb(232, 240, 254,0), rgba(70, 90, 126, 0)) !important;;
 }
 
 .alert
