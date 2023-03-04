@@ -90,7 +90,7 @@ function Home() {
 
       <div className="game-library text-center">
         <div className="row">
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-4">
             <div className="game-card action text-center">
               <img src={menja} alt="Game 1" />
               <div className="game-info">
@@ -104,7 +104,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-4">
             <div className="game-card action text-center">
               <img src={tic_tac_toe} alt="Game 2" />
               <div className="game-info">
@@ -118,33 +118,37 @@ function Home() {
             </div>
           </div>
 
-          <div className="col- md-6 col-lg-4">
+          <div className="col-md-4">
             <div className="game-card action text-center">
               <img src={cube} alt="Game 1" />
               <div className="game-info">
                 <h3>The Cube</h3>
-                <button id="gbtn" className="material-symbols-outlined">
-                  play_arrow
-                </button>
+                <Link to="thecube">
+                  <button id="gbtn" className="material-symbols-outlined">
+                    play_arrow
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
 
         <div className="row">
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-4">
             <div className="game-card action text-center">
               <img src={snake} alt="Game 1" />
               <div className="game-info">
                 <h3>SNAKE</h3>
-                <button id="gbtn" className="material-symbols-outlined">
-                  play_arrow
-                </button>
+                <Link to="snake">
+                  <button id="gbtn" className="material-symbols-outlined">
+                    play_arrow
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
 
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-4">
             <div className="game-card action text-center">
               <img src={color_blast} alt="Game 1" />
               <div className="game-info">
@@ -156,7 +160,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-4">
             <div className="game-card action text-center">
               <img src={t_block} alt="Game 1" />
               <div className="game-info">
@@ -170,7 +174,7 @@ function Home() {
         </div>
 
         <div className="row">
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-4">
             <div className="game-card action text-center">
               <img src={colorOn} alt="Game 1" />
               <div className="game-info">
@@ -182,7 +186,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-4">
             <div className="game-card action text-center">
               <img src={infinite_runner} alt="Game 1" />
               <div className="game-info">
@@ -194,7 +198,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6">
+          <div className="col-md-4">
             <div className="game-card action text-center">
               <img src={twozfe} alt="Game 1" />
               <div className="game-info">

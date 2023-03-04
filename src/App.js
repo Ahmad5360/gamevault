@@ -30,7 +30,7 @@ function App() {
           <Route exact path="/latestnews" element={<LatestNews />} />
           <Route exact path="/menja" element={<Menja />} />
           <Route exact path="/tictactoe" element={<TicTacToe />} />
-          
+                   
         </Routes>
         <Footer title={"GameVault"}/>
       </BrowserRouter>
