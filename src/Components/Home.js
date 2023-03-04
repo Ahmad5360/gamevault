@@ -71,7 +71,6 @@ function Home() {
   }
 
   // OnClick Handler For Games
-  
 
   return (
     <div className="container">
@@ -97,11 +96,7 @@ function Home() {
               <div className="game-info">
                 <h3>MENJA</h3>
                 <Link to="menja">
-                  <button
-                    id="gbtn"
-                    className="material-symbols-outlined"
-                    
-                  >
+                  <button id="gbtn" className="material-symbols-outlined">
                     play_arrow
                   </button>
                 </Link>
@@ -114,9 +109,11 @@ function Home() {
               <img src={tic_tac_toe} alt="Game 2" />
               <div className="game-info">
                 <h3>Tik-Tac-Toe</h3>
-                <button id="gbtn" className="material-symbols-outlined">
-                  play_arrow
-                </button>
+                <Link to="tictactoe">
+                  <button id="gbtn" className="material-symbols-outlined">
+                    play_arrow
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -7,6 +7,7 @@ import Contact from "./Components/Contact";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/footer"
 import Menja from "./Components/Games/Menja/Menja";
+import TicTacToe from "./Components/Games/Tic-Tac-Toe/TicTacToe";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/latestnews" element={<LatestNews />} />
           <Route exact path="/menja" element={<Menja />} />
+          <Route exact path="/tictactoe" element={<TicTacToe />} />
           
         </Routes>
         <Footer title={"GameVault"}/>

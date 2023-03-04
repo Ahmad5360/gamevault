@@ -156,9 +156,10 @@ export default function Menja() {
     // ============================================================================
     // ============================================================================
 
-    const invariant = (condition, message) => {
-      if (!condition) throw new Error(message);
-    };
+    
+    // const invariant = (condition, message) => {
+    //   if (!condition) throw new Error(message);
+    // };
 
     /////////
     // DOM //
@@ -183,9 +184,9 @@ export default function Menja() {
     // Math Constants //
     ////////////////////
 
-    const PI = Math.PI;
+    // const PI = Math.PI;
     const TAU = Math.PI * 2;
-    const ETA = Math.PI * 0.5;
+    // const ETA = Math.PI * 0.5;
 
     //////////////////
     // Math Helpers //
@@ -206,8 +207,8 @@ export default function Menja() {
     const random = (min, max) => Math.random() * (max - min) + min;
 
     // Generates a random integer between and possibly including min and max values
-    const randomInt = (min, max) =>
-      ((Math.random() * (max - min + 1)) | 0) + min;
+    // const randomInt = (min, max) =>
+    //   ((Math.random() * (max - min + 1)) | 0) + min;
 
     // Returns a random element from an array
     const pickOne = (arr) => arr[(Math.random() * arr.length) | 0];
@@ -575,19 +576,19 @@ export default function Menja() {
 
       // Compute the max distance x, y, or z origin values will be.
       // Same result as `Math.max(...cubeOrigins.map(o => o.x))`, but much faster.
-      const maxComponent =
-        getScaleAtLevel(recursionLevel) * (3 ** recursionLevel - 1);
+      // const maxComponent =
+      //   getScaleAtLevel(recursionLevel) * (3 ** recursionLevel - 1);
 
       // Place cube geometry at each origin.
       cubeOrigins.forEach((origin, cubeIndex) => {
         // To compute occlusion (shading), find origin component with greatest
         // magnitude and normalize it relative to `maxComponent`.
-        const occlusion =
-          Math.max(Math.abs(origin.x), Math.abs(origin.y), Math.abs(origin.z)) /
-          maxComponent;
+        // const occlusion =
+        //   Math.max(Math.abs(origin.x), Math.abs(origin.y), Math.abs(origin.z)) /
+        //   maxComponent;
         // At lower iterations, occlusion looks better lightened up a bit.
-        const occlusionLighter =
-          recursionLevel > 2 ? occlusion : (occlusion + 0.8) / 1.8;
+        // const occlusionLighter =
+        //   recursionLevel > 2 ? occlusion : (occlusion + 0.8) / 1.8;
         // Clone, translate vertices to origin, and apply scale
         finalModel.vertices.push(
           ...cubeModel.vertices.map((v) => ({
@@ -953,6 +954,8 @@ export default function Menja() {
             case "z":
               target.rotateZD = spinSpeed;
               break;
+            default:
+
           }
         });
 
@@ -1274,6 +1277,7 @@ export default function Menja() {
           }
           showMenu(menuScoreNode);
           break;
+        default:
       }
 
       setHudVisibility(!isMenuVisible());
@@ -1804,8 +1808,8 @@ export default function Menja() {
     function draw(ctx, width, height, viewScale) {
       PERF_START("draw");
 
-      const halfW = width / 2;
-      const halfH = height / 2;
+      // const halfW = width / 2;
+      // const halfH = height / 2;
 
       // 3D Polys
       // ---------------
