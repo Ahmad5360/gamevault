@@ -71,9 +71,7 @@ function Home() {
   }
 
   // OnClick Handler For Games
-  const handleClick = (filePath) => {
-    window.open(filePath, "_blank");
-  };
+  
 
   return (
     <div className="container">
@@ -98,11 +96,11 @@ function Home() {
               <img src={menja} alt="Game 1" />
               <div className="game-info">
                 <h3>MENJA</h3>
-                <Link>
+                <Link to="menja">
                   <button
                     id="gbtn"
                     className="material-symbols-outlined"
-                    onClick={() => handleClick("../Games/Menja/main.html")}
+                    
                   >
                     play_arrow
                   </button>

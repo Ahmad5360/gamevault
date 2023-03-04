@@ -6,6 +6,7 @@ import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/footer"
+import Menja from "./Components/Games/Menja/Menja";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/latestnews" element={<LatestNews />} />
+          <Route exact path="/menja" element={<Menja />} />
           
         </Routes>
         <Footer title={"GameVault"}/>
