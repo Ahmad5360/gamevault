@@ -15,7 +15,8 @@ export default function footer(props) {
           WebkitBackdropFilter: "blur(5px)",
           border: "1px solid rgba(255, 255, 255, 0.3)",
           lineHeight:"30px",
-          fontWeight:"lighter"
+          fontWeight:"lighter",
+          
         }}
       >
         <p className="mt-1">Copyrights @ {currentYear} {props.title}.<br/> All Rights Reserved. Created By Ahmad Rashid</p>

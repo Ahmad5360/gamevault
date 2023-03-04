@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import "./TicTacToe.css"
 export default function TicTacToe() {
   useEffect(() => {
-    window.addEventListener("DOMContentLoaded", () => {
+    
+    // window.addEventListener("DOMContentLoaded", () => {
       const tiles = Array.from(document.querySelectorAll(".tile"));
       const playerDisplay = document.querySelector(".display-player");
       const resetButton = document.querySelector("#reset");
@@ -125,11 +126,11 @@ export default function TicTacToe() {
       });
 
       resetButton.addEventListener("click", resetBoard);
-    });
+    // });
   }, []);
   return (
     <div>
-      <main className="background">
+      <div className="background">
         <section className="title_t">
           <h1>Tic Tac Toe</h1>
         </section>
@@ -147,11 +148,11 @@ export default function TicTacToe() {
           <div className="tile"></div>
           <div className="tile"></div>
         </section>
-        <section className="display announcer hide"></section>
+        <section className="display announcer hide" style={{marginBottom:"50px"}}></section>
         <section className="controls">
           <button id="reset">Reset</button>
         </section>
-      </main>
+      </div>
     </div>
   );
 }

@@ -516,6 +516,16 @@ input:-internal-autofill-selected {
 
 }
 
+
+@media (min-width: 280px) {
+  .game-library .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+
 @media (max-width: 767px) {
   .footer>div {
     font-size: 12px;
@@ -535,4 +545,11 @@ input:-internal-autofill-selected {
     font-size: 30px;
     height: 80px;
   }
+  .game-library .col-md-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
 }
+
+
+

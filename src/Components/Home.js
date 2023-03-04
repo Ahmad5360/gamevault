@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import menja from "../images/MENJA.png";
 import tic_tac_toe from "../images/Tic-Tac-Toe.png";
 import cube from "../images/cube.png";
-import snake from "../images/Tic-Tac-Toe.png";
+import snake from "../images/Snake-Game.png";
 import color_blast from "../images/Color-Blast.png";
 import t_block from "../images/Tower-Blocks.png";
 import colorOn from "../images/COLORON-GAME.png";
@@ -75,7 +75,7 @@ function Home() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-8 offset-md-2">
+        <div className="col-12">
           <div className="title text-center">
             {/* <h1>GameVault</h1> */}
             <div className="console-container">
@@ -90,7 +90,7 @@ function Home() {
 
       <div className="game-library text-center">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
             <div className="game-card action text-center">
               <img src={menja} alt="Game 1" />
               <div className="game-info">
@@ -104,7 +104,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
             <div className="game-card action text-center">
               <img src={tic_tac_toe} alt="Game 2" />
               <div className="game-info">
@@ -118,7 +118,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col- md-6 col-lg-4">
             <div className="game-card action text-center">
               <img src={cube} alt="Game 1" />
               <div className="game-info">
@@ -132,7 +132,7 @@ function Home() {
         </div>
 
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
             <div className="game-card action text-center">
               <img src={snake} alt="Game 1" />
               <div className="game-info">
@@ -144,7 +144,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
             <div className="game-card action text-center">
               <img src={color_blast} alt="Game 1" />
               <div className="game-info">
@@ -156,7 +156,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
             <div className="game-card action text-center">
               <img src={t_block} alt="Game 1" />
               <div className="game-info">
@@ -170,7 +170,7 @@ function Home() {
         </div>
 
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
             <div className="game-card action text-center">
               <img src={colorOn} alt="Game 1" />
               <div className="game-info">
@@ -182,7 +182,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-4">
             <div className="game-card action text-center">
               <img src={infinite_runner} alt="Game 1" />
               <div className="game-info">
@@ -194,7 +194,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-6">
             <div className="game-card action text-center">
               <img src={twozfe} alt="Game 1" />
               <div className="game-info">

@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
-
-
 .background {
-    
+
     height: 100vh;
     padding-top: 1px;
 }
 
-.title_t {
+.title_t h1 {
     color: white;
     text-align: center;
     font-size: 40px;
@@ -30,8 +28,8 @@
 #container {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 36% 36% 36%;
+    grid-template-rows: 36% 36% 36%;
     max-width: 300px;
 
 }
@@ -60,7 +58,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
+    margin-top: 2.5em;
 }
 
 .controls button {
@@ -78,5 +76,19 @@
 }
 
 #reset {
-    background-color: #FF3860;
+    background: rgba(248, 244, 244, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0;
 }
+
+@media (min-width: 768px) {
+    .title_t {
+        color: white;
+        text-align: center;
+        font-size: 32px;
+        margin-top: 10%;
+    }
+  }
